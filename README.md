@@ -1,4 +1,4 @@
-<img width="301" height="370" alt="Screenshot 2025-10-26 124040" src="https://github.com/user-attachments/assets/4305760d-2cc2-44ed-b5cc-89e04b8086fc" />
+<img width="480" height="370" alt="Screenshot 2025-10-26 124040" src="https://github.com/user-attachments/assets/4305760d-2cc2-44ed-b5cc-89e04b8086fc" />
 
 🎭 Emotion Detection Using Machine Learning
 This project is a Machine Learning
