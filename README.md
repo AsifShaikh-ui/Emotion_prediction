@@ -26,7 +26,7 @@ The goal was to demonstrate a complete end-to-end NLP pipeline — from raw text
 📌 **[Click here to try the live app →](https://asifshaikh-ui-emotion-prediction-app-i6jtrl.streamlit.app/)**
 
 <!-- Add screenshot below -->
-![App Screenshot](screenshots/app_screenshot.png)
+![App Screenshot](dashbords/dashbord.png)
 
 ---
 
