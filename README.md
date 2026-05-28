@@ -1,44 +1,122 @@
-<img width="480" height="370" alt="Screenshot 2025-10-26 124040" src="https://github.com/user-attachments/assets/4305760d-2cc2-44ed-b5cc-89e04b8086fc" />
+# NLP-Based Emotion Detection System
 
-🎭 Emotion Detection Using Machine Learning
-This project is a Machine Learning
-based Emotion Prediction Model that identifies human emotions from text data such as joy, sadness, anger, fear, love, and surprise.
-It helps understand how people express emotions through words using Natural Language Processing (NLP).
+> Classifying human emotions from text using Machine Learning — deployed as a live web application.
 
-📘 Objective
-The main goal of this project is to predict the emotion behind a given text using machine learning.
-It uses text preprocessing, feature extraction (TF-IDF), and a classification model to detect emotions with high accuracy.
+![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat&logo=python)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?style=flat&logo=scikit-learn)
+![Streamlit](https://img.shields.io/badge/Streamlit-Live%20App-red?style=flat&logo=streamlit)
+![Accuracy](https://img.shields.io/badge/Accuracy-92%25-brightgreen?style=flat)
 
-⚙️ Methodology
-Dataset Preparation:
-The dataset train.txt contains two columns: Text and Emotions.
-The data was analyzed and balanced to remove class imbalance problems.
+🔗 **[Live App](https://asifshaikh-ui-emotion-prediction-app-i6jtrl.streamlit.app/)** | 📁 **[Dataset](https://www.kaggle.com/)** (Kaggle Emotions Dataset)
 
-Data Preprocessing:
-Converted all text to lowercase.
-Removed unnecessary characters and spaces.
-Encoded emotions into numeric form using LabelEncoder.
+---
 
-Feature Extraction:
-Used TF-IDF Vectorizer to convert text into numerical feature vectors.
+## Overview
 
-Model Training:
-Applied Logistic Regression classifier.
-Trained the model on balanced data for better emotion prediction.
+This project builds a text-based emotion classifier that predicts one of **6 human emotions** from any input sentence or message. The model is trained using Logistic Regression on a Kaggle emotions dataset and deployed as an interactive web application using Streamlit.
 
-Model Evaluation:
-Achieved around 88% accuracy.
-Evaluated using metrics like Precision, Recall, and F1-score.
+The goal was to demonstrate a complete end-to-end NLP pipeline — from raw text preprocessing to a live, deployable prediction system.
 
-Model Deployment:
-The model is deployed using Streamlit, a Python web framework for interactive apps.
-It allows users to enter any text and view the predicted emotion instantly.
+---
 
-🧠 Algorithms & Tools Used
-Category	Tools / Libraries
-Programming Language	Python
-Data Handling	Pandas, NumPy
-Model Building	Scikit-learn (Logistic Regression)
-Text Processing	TF-IDF Vectorizer
-Web App	Streamlit
-Model Saving	Joblib
+## Live Demo
+
+> Paste any sentence and the app instantly predicts the emotion behind it.
+
+📌 **[Click here to try the live app →](https://asifshaikh-ui-emotion-prediction-app-i6jtrl.streamlit.app/)**
+
+<!-- Add screenshot below -->
+![App Screenshot](screenshots/app_screenshot.png)
+
+---
+
+## Key Results
+
+| Metric | Value |
+|---|---|
+| Model | Logistic Regression |
+| Dataset | Kaggle Emotions Dataset |
+| Emotions classified | 6 (joy, sadness, anger, fear, love, surprise) |
+| Model accuracy | **92%** |
+| Deployment | Streamlit (live) |
+
+---
+
+## Emotions Classified
+
+| Emotion | Description |
+|---|---|
+| 😊 Joy | Happiness, excitement, positivity |
+| 😢 Sadness | Grief, disappointment, sorrow |
+| 😠 Anger | Frustration, rage, irritation |
+| 😨 Fear | Anxiety, worry, dread |
+| ❤️ Love | Affection, warmth, care |
+| 😲 Surprise | Shock, amazement, disbelief |
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+|---|---|
+| Python | Core programming language |
+| Pandas & NumPy | Data loading and preprocessing |
+| Scikit-learn | Model training, TF-IDF vectorization, evaluation |
+| Matplotlib | Data visualization during EDA |
+| Streamlit | Web app deployment |
+
+---
+
+## Project Structure
+
+```
+Emotion_prediction/
+│
+├── app.py                  # Streamlit web application
+├── model.pkl               # Trained Logistic Regression model
+├── vectorizer.pkl          # Fitted TF-IDF vectorizer
+├── emotion_prediction.ipynb # Full notebook: EDA, training, evaluation
+├── requirements.txt        # Python dependencies
+└── README.md
+```
+
+---
+
+## How It Works
+
+```
+User Input Text
+      ↓
+Text Preprocessing (lowercase, remove punctuation, stopwords)
+      ↓
+TF-IDF Vectorization
+      ↓
+Logistic Regression Model
+      ↓
+Predicted Emotion + Confidence Score
+```
+
+---
+
+## How to Run Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/AsifShaikh-ui/Emotion_prediction.git
+cd Emotion_prediction
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run the Streamlit app
+streamlit run app.py
+```
+
+---
+
+## Author
+
+**Asif Iqbal Shaikh**
+📧 sasif9226@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/asif-shaikh-5487a9270)
+🐙 [GitHub](https://github.com/AsifShaikh-ui)
